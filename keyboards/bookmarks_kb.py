@@ -4,7 +4,7 @@ from lexicon.lexicon import LEXICON
 from services.file_handling import book
 
 def create_bookmarks_kb(*args: int) -> InlineKeyboardMarkup:
-    kb_builder = InlineKeyboardBuilder
+    kb_builder = InlineKeyboardBuilder()
 
     for button in sorted(args):
         kb_builder.row(InlineKeyboardButton(
