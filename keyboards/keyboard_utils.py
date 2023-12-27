@@ -1,6 +1,6 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
-from lexicon.lexicon_ru import LEXICON_INLINE_BUTTONS
+from lexicon.lexicon import LEXICON_INLINE_BUTTONS
 
 def create_inline_kb(width: int,
                      *args: str,

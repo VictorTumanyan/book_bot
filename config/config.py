@@ -6,13 +6,6 @@ class TgBot:
     token: str
 
 @dataclass
-class DatabaseConfig:
-    database: str
-    db_host: str
-    db_user: str
-    db_password: str
-
-@dataclass
 class Config:
     tg_bot: TgBot
 
