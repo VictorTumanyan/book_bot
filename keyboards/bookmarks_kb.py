@@ -26,7 +26,7 @@ def create_bookmarks_kb(*args: int) -> InlineKeyboardMarkup:
     return kb_builder.as_markup()
 
 def create_edit_kb(*args: int) -> InlineKeyboardMarkup:
-    kb_builder = InlineKeyboardBuilder
+    kb_builder = InlineKeyboardBuilder()
 
     for button in sorted(args):
         kb_builder.row(InlineKeyboardButton(
