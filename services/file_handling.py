@@ -29,12 +29,6 @@ def _get_part_text(text: str, start: int, size: int) -> tuple[str, int]:
 
     return (page_text, len(page_text))
 
-# text = 'Раз. Два. Три. Четыре. Пять. Прием!'
-
-# text, size = _get_part_text(text, 0, 5)
-# print(type(text))
-# print(type(size))
-
 # Функция, формирующая словарь книги
 def prepare_book(path: str) -> None:
     with open(path, encoding='utf-8') as f:
